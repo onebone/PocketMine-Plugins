@@ -22,12 +22,9 @@ class CatchingTheTail extends PluginBase implements Listener {
 	}
 	
 	public function onCommand ($sender, $command, $label, $args) {
-		
 		switch ( $command->getName() ) {
-			
 			case "ct":
 				if ( isset ( $args[0] ) ) {
-					
 					switch ( $args[0] ) {
 						
 						case "start":
@@ -72,14 +69,11 @@ class CatchingTheTail extends PluginBase implements Listener {
 							}
 							
 					}
-					
 				} else {
 					$sender->sendMessage( "[꼬리잡기] 사용법: /ct <start|stop|add|remove|list>" );
 					return true;
 				}
-				
 		}
-		
 	}
 	
 	public function gameStart() {
@@ -100,9 +94,7 @@ class CatchingTheTail extends PluginBase implements Listener {
 	}
 	
 	public function showTarget() {
-		
 		$countOfPlayer = count( $gamePlayers ) - 1 ;
-		
 		while ( $countOfPlayers >= 0 ) {
 			if ( $countOfPlayer == count( $gamePlayers ) - 1 ) {
 				$gamePlayers[$countOfPlayer]->sendMessage( "당신의 타겟은 " . $gamePlayers[0] . " 입니다." );
