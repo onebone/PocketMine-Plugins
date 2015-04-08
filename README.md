@@ -1,2 +1,2 @@
-# PocketMine-Plugin
-PocketMine-MP Plugin
+# PocketMine-Plugins
+PocketMine-MP Plugins
