@@ -1,0 +1,10 @@
+name: CatchingTheTail
+main: CatchingTheTail\CatchingTheTail
+version: "1.0"
+author: JacobYun
+api: 1.11.0
+
+commands:
+ ct:
+  description: 꼬리잡기 관련 명렁어
+  usage: /ct <start|stop|add|remove|list>
