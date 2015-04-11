@@ -1,0 +1,10 @@
+name: Pell
+main: Pell\Pell
+version: 0.1
+author: JacobYun
+api: 1.12.0
+
+commands:
+ pell:
+  description: Sends a private popup-message to the given player
+  usage: /pell [player] <message>
