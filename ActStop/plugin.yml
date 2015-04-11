@@ -1,0 +1,10 @@
+name: ActStop
+main: ActStop\ActStop
+version: 1.0
+author: JacobYun
+api: 1.11.0
+
+commands:
+ ActStop:
+  description: Commands about ActStop
+  usage: /ActStop <on|off>
