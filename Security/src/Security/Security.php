@@ -61,8 +61,10 @@ class Security extends PluginBase implements Listener {
                     }
                     if ( $this->configData["WarningBan"] == true ) {
                         if ( $target instanceof Player ) {
-                            if ( $this->userData[$target->getPlayer()->getName()] >= $this->configData["BanCount"] )
+                            if ( $this->userData[$target->getPlayer()->getName()] >= $this->configData["BanCount"] ) {
                                 $target->getPlayer()->setBanned( true );
+                                $this->userData[$target->getPlayer()->getName()] = 0;
+                             }
                         }
                     }
                     return true;
